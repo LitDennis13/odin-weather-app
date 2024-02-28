@@ -6,24 +6,36 @@
     <title>Weather App</title>
 </head>
 <body>
-    <form action="#" method="get">
-        <input type="search" placeholder="Location">
-        <button type="button">Get Weather Data</button>
+    <form action="#" method="get" id="search-form">
+        <input type="text" placeholder="Location" id="location-field">
+        <button id="get-weather-data-button">Get Weather Data</button>
     </form>
 
-    <p id="sky-condition"></p>
-    <img id="sky-condition-image"></img>
-    <p id="location-name"></p>
-    <p id="country"></p>
-    <p id="region"></p>
-    <p id="date"></p>
-    <p id="local-time"></p>
-    <p id="actual-temp"></p>
-    <p id="feels-like-temp"></p>
-    <p id="humidity"></p>
-    <p id="wind-speed"></p>
-    <p id="gust-speed"></p>
-    <p id="visibility"></p>
+    <div id="location-info">
+        <p id="country"></p>
+        <p id="location-name"></p>
+    </div>
+
+    <div id="location-time">
+        <p id="date"></p>
+        <p id="local-time"></p>
+    </div>
+
+    
+    <div id="important-info">
+        <p id="actual-temp"></p>
+        <p id="feels-like-temp"></p>
+        <p id="sky-condition"></p>
+        <img id="sky-condition-image"></img>
+    </div>
+    
+    <div id="extra">
+        <p id="humidity"></p>
+        <p id="wind-speed"></p>
+        <p id="gust-speed"></p>
+        <p id="visibility"></p>
+    </div>
+    
 
 
 </body>

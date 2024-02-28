@@ -17,7 +17,6 @@ function seperateDataIntoObject(weatherData) {
         skyConditionImage: weatherData.current.condition.icon,
         locationName: weatherData.location.name,
         country: weatherData.location.country,
-        region: weatherData.location.region,
         date: weatherData.location.localtime.substring(0, 10),
         localTime: weatherData.location.localtime.substring(11, 16),
         actualTemp: weatherData.current.temp_c,
